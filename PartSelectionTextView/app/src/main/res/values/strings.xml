@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PartSelectionTextView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="test_text">public static void clear(Context context) {
+        SharedPreferences sp = context.getSharedPreferences(FILE_NAME,
+                Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.clear();
+        SharedPreferencesCompat.apply(editor);
+    } public static MapgetAll(Context context) {
+        SharedPreferences sp = context.getSharedPreferences(FILE_NAME,
+                Context.MODE_PRIVATE);
+        return sp.getAll();
+    }
+\n
+    private static class SharedPreferencesCompat {
+        private static final Method sApplyMethod = findApplyMethod();
+
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        private static Method findApplyMethod() {
+            try {
+                Class clz = SharedPreferences.Editor.class;
+                return clz.getMethod("apply");
+            } catch (NoSuchMethodException e) {
+            }
+
+            return null;
+        }
+\n
+        public static void apply(SharedPreferences.Editor editor) {
+            try {
+                if (sApplyMethod != null) {
+                    sApplyMethod.invoke(editor);
+                    return;
+                }
+            } catch (IllegalArgumentException e) {
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+            editor.commit();
+        }
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        private static Method findApplyMethod() {
+            try {
+                Class clz = SharedPreferences.Editor.class;
+                return clz.getMethod("apply");
+            } catch (NoSuchMethodException e) {
+            }
+
+            return null;
+        }
+\n
+        public static void apply(SharedPreferences.Editor editor) {
+            try {
+                if (sApplyMethod != null) {
+                    sApplyMethod.invoke(editor);
+                    return;
+                }
+            } catch (IllegalArgumentException e) {
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+            editor.commit();
+        }
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        private static Method findApplyMethod() {
+            try {
+                Class clz = SharedPreferences.Editor.class;
+                return clz.getMethod("apply");
+            } catch (NoSuchMethodException e) {
+            }
+
+            return null;
+        }
+\n
+        public static void apply(SharedPreferences.Editor editor) {
+            try {
+                if (sApplyMethod != null) {
+                    sApplyMethod.invoke(editor);
+                    return;
+                }
+            } catch (IllegalArgumentException e) {
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+            editor.commit();
+        }
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        private static Method findApplyMethod() {
+            try {
+                Class clz = SharedPreferences.Editor.class;
+                return clz.getMethod("apply");
+            } catch (NoSuchMethodException e) {
+            }
+
+            return null;
+        }
+\n
+        public static void apply(SharedPreferences.Editor editor) {
+            try {
+                if (sApplyMethod != null) {
+                    sApplyMethod.invoke(editor);
+                    return;
+                }
+            } catch (IllegalArgumentException e) {
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+            editor.commit();
+        }
+    }</string>
+
+</resources>
